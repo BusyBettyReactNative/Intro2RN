@@ -10,7 +10,7 @@
 //TODO move inline styles to classes, create a prop for the image url
 
 import React, { Component } from 'react';
-import { AppRegistry, View, ScrollView, Text, Image } from 'react-native';
+import { AppRegistry, View, ScrollView, StyleSheet,Text, Image } from 'react-native';
 
 export default class FixedDimensionsBasics extends Component {
   render() {
@@ -19,10 +19,10 @@ export default class FixedDimensionsBasics extends Component {
       <ScrollView>
         <View style={{backgroundColor:'#4197C2', flexDirection:'row', padding:10}}>
           <Image source={imgURL} style={styles.headerLogo}/>
-          <Text style={headerText}>React Native</Text>
+          <Text style={styles.headerText}>React Native</Text>
         </View>
         <View style={styles.bodyContentContainer}>
-        <Text style={bodyText}>React Native is Awesome.</Text>
+        <Text style={styles.bodyText}>React Native is Awesome.</Text>
                 </View>
       <View style={styles.footerContainer}>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
