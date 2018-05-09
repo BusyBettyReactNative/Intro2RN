@@ -33,3 +33,4 @@ export default class FixedDimensionsBasics extends Component {
 
 // skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => FixedDimensionsBasics);
+
