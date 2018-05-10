@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, TextInput } from 'react-native';
-//import { TextInput } from 'react-native-gesture-handler';
+import UXDTextInput from './app/uxdTextInput';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: 'Useless Placeholder'
+      
     };
   }
 
@@ -25,25 +25,19 @@ export default class App extends React.Component {
           <Text style={{padding:10}}>
             {'My TextInput Value bound by state: ' + this.state.text + ' '}
           </Text>
-          <TextInput style={{ height: 40, padding: 20, borderColor: '#eee', borderWidth: 1 }}
-            onChangeText={(text) => this.setState({ text })}
-            // keyboard types enum('default', 'numeric', 'email-address', 'ascii-capable', 'numbers-and-punctuation', 'url', 'number-pad', 'phone-pad', 'name-phone-pad', 'decimal-pad', 'twitter', 'web-search')
-            // example keyboardType={number}
-            // autoComplete={true/false}
+          <UXDTextInput 
+            keyboardType={'numeric'}
+            autoComplete={false}
             // autoCorrect={true/false}
-            // multiline={true/false}
+            multiline={true}
             placeholder='enter value'
-            //placeholderTextColor='blue'
-            maxLength={50}
+            maxLength={250}
             //value={this.state.text}
           />
         </View>
         <View style={{flexDirection:'row', flex:1, justifyContent: 'space-evenly', alignItems:"flex-end", backgroundColor: '#4197C2', maxHeight:80}}>
             <Text style={{color: '#fff', paddingBottom:30, fontSize:22}}> #UXDEVSUMMIT
               </Text>
-            {/* <View style={{ width: 50, height: 50, backgroundColor: 'powderblue' }} />
-            <View style={{ width: 100, height: 50, backgroundColor: 'skyblue' }} />
-            <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} /> */}
         </View>
       </View>
 
