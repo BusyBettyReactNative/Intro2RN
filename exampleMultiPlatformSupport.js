@@ -1,7 +1,4 @@
 
-
-
-
 //the js file will need the following import at the top of the page:
 import { Platform } from 'react-native';
 
