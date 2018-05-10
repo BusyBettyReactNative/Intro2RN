@@ -23,7 +23,7 @@ export default class App extends React.Component {
         </ScrollView>
         <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center' }}>
           <Text style={{padding:10}}>
-            {'Text Input Value bound by state: ' + this.state.text + ' '}
+            {'My TextInput Value bound by state: ' + this.state.text + ' '}
           </Text>
           <TextInput style={{ height: 40, padding: 20, borderColor: '#eee', borderWidth: 1 }}
             onChangeText={(text) => this.setState({ text })}
@@ -39,7 +39,7 @@ export default class App extends React.Component {
           />
         </View>
         <View style={{flexDirection:'row', flex:1, justifyContent: 'space-evenly', alignItems:"flex-end", backgroundColor: '#4197C2', maxHeight:80}}>
-            <Text style={{color: '#fff', paddingBottom:20, fontSize:22}}> #UXDEVSUMMIT
+            <Text style={{color: '#fff', paddingBottom:30, fontSize:22}}> #UXDEVSUMMIT
               </Text>
             {/* <View style={{ width: 50, height: 50, backgroundColor: 'powderblue' }} />
             <View style={{ width: 100, height: 50, backgroundColor: 'skyblue' }} />
